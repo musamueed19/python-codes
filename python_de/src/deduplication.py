@@ -1,4 +1,4 @@
-from .lists_filters import orders
+from lists_filters import orders
 
 order_ids = []
 for order in orders:
