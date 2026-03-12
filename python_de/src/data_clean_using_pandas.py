@@ -3,12 +3,12 @@ import pandas as pd
 
 df = pd.read_csv("data/raw/raw_orders.csv")
 
-df["total_amount"] = df["total_amount"].fillna(0)
-df["total_amount"] = df["total_amount"].astype(float)
+df["total_amount"] = df["total_amount"].astype(float).fillna(0)
 df["order_id"] = df["order_id"].astype(int)
-df["customer_name"] = df["customer_name"].str.upper()
+df["customer_name"] = df["customer_name"].astype(str).str.upper()
 df["items"] = df["items"].apply(ast.literal_eval)
-df["country"] = df["country"].astype(str)
+df["country"] = df["country"].astype(str).str.upper()
+df["city"] = df["city"].astype(str).str.upper()
 
 print(df)
 
@@ -20,7 +20,7 @@ country_summary = (
 )
 
 country_simple_summary = (
-    df.groupby("country")
+    df.groupby(["country", "city"])
     .agg(
         total_orders=("order_id", "count"),
         total_sales=("total_amount", "sum"),

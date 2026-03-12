@@ -16,7 +16,8 @@ df = pd.DataFrame({
         [{"item_id": "I1", "item_name": "Whatsit Ultra"}, {"item_id": "I2", "item_name": "Contraption Extreme"}],
         [{"item_id": "J1", "item_name": "Doodad Pro"}, {"item_id": "J2", "item_name": "Thingy Plus"}, {"item_id": "J3", "item_name": "Widget Max"}]
     ],
-    "country": ["SAR", "PAK", "SAR", "PAK", "SAR", "PAK", "SAR", "PAK", "SAR", "PAK"]
+    "country": ["SAR", "PAK", "SAR", "PAK", "SAR", "PAK", "SAR", "PAK", "SAR", "PAK"],
+    "city": ["Riyadh", "Karachi", "Jeddah", "Lahore", "Dammam", "Islamabad", "Mecca", "Faisalabad", "Medina", "Multan"]
 })
 print(df)
 df.to_csv("data/raw/raw_orders.csv", index=False)
