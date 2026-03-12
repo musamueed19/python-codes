@@ -13,3 +13,19 @@ def transform_orders(raw_orders):
         })
         
     return transformed_orders
+
+if __name__ == "__main__":
+    try:
+        from data.orders_data import orders_data
+    except ModuleNotFoundError:
+        import os
+        import sys
+
+        # Allow direct script execution from nested path by adding src to sys.path.
+        src_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+        if src_root not in sys.path:
+            sys.path.insert(0, src_root)
+        from data.orders_data import orders_data
+
+    cleaned_orders = transform_orders(raw_orders=orders_data)
+    print(cleaned_orders)
