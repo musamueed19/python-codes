@@ -30,4 +30,8 @@ country_simple_summary = (
 
 print(country_simple_summary)
 
+
+df["running_total"] = df["total_amount"].cumsum()
+print(df)
+
 country_simple_summary.to_csv("data/processed/country_city_summary.csv", index=True)
