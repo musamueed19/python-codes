@@ -29,3 +29,5 @@ country_simple_summary = (
 )
 
 print(country_simple_summary)
+
+country_simple_summary.to_csv("data/processed/country_city_summary.csv", index=True)
