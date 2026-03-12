@@ -1,0 +1,11 @@
+order_id,customer_name,total_amount,items,country
+1,Alice,100.0,"[{'item_id': 'A1', 'item_name': 'Widget'}, {'item_id': 'A2', 'item_name': 'Gadget'}]",SAR
+2,Bob,150.5,"[{'item_id': 'B1', 'item_name': 'Thingamajig'}]",PAK
+3,Charlie,200.0,"[{'item_id': 'C1', 'item_name': 'Doohickey'}, {'item_id': 'C2', 'item_name': 'Whatsit'}, {'item_id': 'C3', 'item_name': 'Contraption'}]",SAR
+4,David,250.75,"[{'item_id': 'D1', 'item_name': 'Gizmo'}]",PAK
+5,Eve,300.0,"[{'item_id': 'E1', 'item_name': 'Doodad'}, {'item_id': 'E2', 'item_name': 'Thingy'}]",SAR
+6,Frank,350.25,"[{'item_id': 'F1', 'item_name': 'Widget Pro'}]",PAK
+7,Grace,400.0,"[{'item_id': 'G1', 'item_name': 'Gadget Plus'}, {'item_id': 'G2', 'item_name': 'Gizmo Max'}]",SAR
+8,Heidi,450.5,"[{'item_id': 'H1', 'item_name': 'Doohickey Deluxe'}]",PAK
+9,Ivan,,"[{'item_id': 'I1', 'item_name': 'Whatsit Ultra'}, {'item_id': 'I2', 'item_name': 'Contraption Extreme'}]",SAR
+10,Judy,550.75,"[{'item_id': 'J1', 'item_name': 'Doodad Pro'}, {'item_id': 'J2', 'item_name': 'Thingy Plus'}, {'item_id': 'J3', 'item_name': 'Widget Max'}]",PAK
